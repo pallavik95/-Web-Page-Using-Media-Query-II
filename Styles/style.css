@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+   
+}
+body{
+    background-color: black;
+    width: 100%;
+    
+}
+.menu-bar{
+    width: 100%;
+    margin-right: 10px;
+    /* height: 80px; */
+    align-items: center;
+
+}
+.menu-bar ul{
+    list-style: none;
+    display: flex;
+    float: right;
+    gap: 15px;
+    margin-right: 20px;
+    line-height: 80px;
+}
+ .menu-bar ul li{
+    line-height: 50px;
+    float: right;
+}
+     
+
+.menu-bar ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.menu-bar ul li a:hover{
+   
+    background-color: rgb(86, 127, 209);
+    padding: 5px 10px;
+}
+.home-option{
+    background-color:rgb(86, 127, 209) ;
+    padding: 5px 10px;
+    border-radius: 20%;
+    
+}
+
+.head{
+    width: 100%;
+    height: 20%;
+    display: flex;
+}
+.heading{
+    width: 60%;
+   padding-left: 26%;
+   justify-content: center;
+   align-items: center;
+   padding-top: 8%;
+}
+.imagepc{
+    width: 40%;
+    padding-right: 30%;
+}
+.heading img{
+    width: 30px;
+    height: 30px;
+    align-items: center;
+   
+    padding-top: 5%;
+}
+.imagepc img{
+    width: 400px;
+    height: 350px;
+}
+.heading p,h1{
+color: white;
+
+display: inline;
+}
+
+.heading span{
+    color: rgb(212, 212, 96);
+}
+main{
+    width: 100%;
+}
+main h2{
+   color: white; 
+   text-decoration: underline;
+   text-decoration-color: blue;
+   text-align: center;
+   font-size: 30px;
+   
+}
+
+main div img
+{
+height: 300px;
+width: 300px;
+display: inline;
+position: relative;
+left: 420px;
+}
+main div p{
+    color: white;
+    display: inline;
+    position: relative;
+    left: 250px;
+    
+}
+footer{
+    height: 20%;
+    margin-top: 30px;
+}
+footer p{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    text-decoration: underline;
+    text-decoration-color: blue;
+    padding-top: 20px;
+}
+footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-right: 10px;
+}
+footer ul li a img{
+    height: 20px;
+    width: 20px;
+}
+
+#check{
+    display: none;
+    float: left;
+}
+#bars{
+    display: none;
+    float: left;
+    font-size: 20px;
+}
+/* #check:checked ~ ul{
+     left:0;
+    display:block;
+}  */
+
+/* media query */
+
+@media screen and (max-width:576px){
+    body{
+        text-align: center;
+    }
+    main div{
+        align-items: center;
+        position: relative;
+        left:-50%
+    }
+    .menu-bar ul{
+        display: none;
+        width: 100%;
+        height: 100vh;
+
+    }
+    #bars{
+        display: block;
+        float: left;
+        margin: 20px;
+    }
+    
+    .menu-bar ul li{
+        /* display: block; */
+        text-align: center;
+        gap: 20px;
+    }
+    
+        img[alt="wave"]{
+            display: block;
+        }
+    .head{
+        display: flex;
+        flex-direction: column;
+    } 
+    img[alt="Pcimage"] {
+        width: 60vw;
+        padding-left: 40%;
+        
+    }  
+    .heading{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .heading h1{
+        font-size: 30px;
+        
+    }
+.heading p{
+    font-size: 20px;
+    text-align: center;
+}
+main div{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    /* column-gap: 20px; */
+}
+
+    main div img{
+        width: 50vh;
+        align-content: center;
+    }
+    img[alt="imageicon"]{
+    width: 50vw;
+    
+    }
+main div h1{
+    font-size: 30px;
+}
+
+}
